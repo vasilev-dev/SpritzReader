@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Title 1",
+      "text": "Text 1",
+      "type": 0,
+      "speed": 100,
+      "state": 1,
+      "pathToImage": "card_1.jpg"
+    },
+    {
+      "title": "Title 2",
+      "text": "Text 2",
+      "type": 1,
+      "speed": 125,
+      "state": 0,
+      "pathToImage": "card_2.jpg"
+    },
+  {
+    "title": "Title 3",
+    "text": "Text 3",
+    "type": 0,
+    "speed": 150,
+    "state": 2,
+    "pathToImage": "card_3.jpg"
+  }
+]
