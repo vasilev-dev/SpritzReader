@@ -1,6 +1,27 @@
-<mat-card *ngFor="let card of cards">
-  <mat-card-header>
-    <mat-card-title>{{card.title}}</mat-card-title>
-    <mat-card-subtitle>Card speed: {{card.speed}}</mat-card-subtitle>
-  </mat-card-header>
-</mat-card>
+<div class="center">
+  <mat-card *ngFor="let card of cards">
+    <mat-card-header>
+      <div mat-card-avatar>
+        <mat-icon>{{getIconCardState(card.state)}}</mat-icon>
+      </div>
+      <mat-card-title>{{card.title}}</mat-card-title>
+      <mat-card-subtitle>Card speed: {{card.speed}}</mat-card-subtitle>
+      <div class="card-type">
+        <mat-chip-list>
+          <mat-chip>{{getCardType(card.type)}}</mat-chip>
+        </mat-chip-list>
+      </div>
+    </mat-card-header>
+    <img mat-card-image src="assets/card-images/{{card.pathToImage}}" alt="{{card.title + ' image'}} ">
+    <mat-card-content>
+      <p>
+        {{card.description}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" [disabled]="isClosedCard(card.state)">
+        {{getButtonStateText(card.state)}}
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

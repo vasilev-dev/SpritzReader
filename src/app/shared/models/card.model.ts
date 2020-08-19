@@ -1,6 +1,7 @@
 export class CardModel {
   public title: string;
   public text: string;
+  public description: string;
   public type: CardType;
   public speed: number;
   public state: CardState;
