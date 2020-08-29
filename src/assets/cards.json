@@ -1,29 +1,83 @@
 [
     {
-      "title": "Autumn tourism in Russia",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis consequat imperdiet. Praesent sit amet accumsan est. Maecenas quis leo augue. Pellentesque efficitur lacus a volutpat condimentum. Pellentesque in augue interdum elit facilisis mattis. Aenean pulvinar aliquam maximus. Ut tempus nulla quam, eget pellentesque nisi congue vel. Morbi nulla dolor, consequat ac leo quis, ullamcorper interdum odio. Cras ut ultrices nulla, quis efficitur ipsum. Nulla bibendum velit non sem finibus bibendum.\n\nInteger quis iaculis nulla. Proin elit nulla, lobortis sit amet iaculis vitae, malesuada vel elit. Sed sed posuere velit. Pellentesque sollicitudin massa ut ligula pulvinar, et dapibus tellus laoreet. In et sodales risus, quis ultrices lorem. Sed fringilla lobortis augue, eget vulputate dui luctus vel. Sed justo eros, euismod non diam ut, pharetra euismod elit. Cras metus est, aliquet a sapien quis, ornare fringilla tellus. Mauris eu feugiat mi. Donec sodales viverra congue.\n\nPhasellus laoreet arcu mauris. Pellentesque augue sem, pretium vel ultricies non, commodo a felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla sodales orci et velit imperdiet, eu ornare nulla feugiat. Phasellus gravida pellentesque mi vitae convallis. Quisque dignissim nisi a turpis gravida ultrices. Proin eleifend et orci vitae viverra. Quisque ac lectus augue. Sed pulvinar tortor et elit scelerisque fermentum. Sed dapibus egestas ligula, in viverra ipsum tristique sed. Curabitur efficitur, quam non imperdiet fermentum, ligula arcu accumsan ante, sodales imperdiet tortor nibh et ante. Curabitur turpis velit, molestie nec dui nec, laoreet fringilla eros. Phasellus eu faucibus nunc. Duis vel ultrices sapien, non tristique velit. Suspendisse potenti. Aliquam facilisis mattis sagittis.",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed elit viverra, placerat ex suscipit, hendrerit ex. In eros massa, dignissim eget viverra vel, consequat quis eros. Ut mollis, orci accumsan porttitor faucibus, ligula ante pharetra dui, nec malesuada justo erat nec turpis. Duis eros augue, cursus sit amet consectetur eget, placerat vel magna. Quisque a lectus varius, pulvinar massa sed, luctus erat. Proin lobortis orci ac enim facilisis imperdiet. Cras euismod dui est.",
+      "title": "Банф",
+      "text": "Национальный парк Банф расположен на западе провинции Альберта, на границе с Британской Колумбией. Банф расположен примерно в полутора часах езды от Калгари и в четырёх часах от Эдмонтона. Национальный парк Джаспер расположен на севере, национальный парк Йохо — на западе, а национальный парк Кутеней — на юге от Банфа. Национальный парк Kananaskis Country, который включает в себя парки Bow Valley Wildland Provincial Park, Spray Valley Provincial Park и Peter Lougheed Provincial Park, расположен к югу и к востоку от Банф. Национальный парк Банф имеет многочисленные ледники и ледяные поля, многие из которых легко увидеть с шоссе Icefields Parkway. Малые цирки ледников довольно распространены в Main Ranges, расположены в низинах, на склоне многих гор. Как и большинство горных ледников в мире, ледники в Банфе отступают. Фотографические доказательства дают показания этому процессу, эта тенденция стала достаточно тревожной, и гляциологи провели более тщательное изучение ледников в парке, и проанализировали влияние, что сокращение ледников может ухудшить приток воды в ручьях и реках. Крупнейшие ледниковые области включают Waputik и Wapta Icefields, которые лежат на границе национальных парков Банфа и Йохо. Ледник Боу отступил на 1 100 метров с 1850 по 1953 годы, и с этого периода наблюдается дальнейшее отступление, недавно образовалось озеро, граничащее с мореной. Ледник Peyto Glacier отступил примерно на 2.000 метров с 1880 года, и находится под угрозой полного исчезновения в течение ближайших 30—40 лет.",
+      "description": "Национальный парк Банф (Banff National Park) — первый парк Канады, который был создан в 1885 году. Расположенный в провинции Альберта, примерно в 110 километрах от Калгари, он также считается крупнейшим национальным парком в Канаде и одним из крупнейших во всем мире.",
       "type": 0,
-      "speed": 100,
+      "speed": 250,
       "state": 1,
-      "pathToImage": "card_1.jpg"
+      "pathToImage": "card_1.jpg",
+      "checks": [
+        {
+          "text": "Национальный парк Банф находится в США",
+          "isTrue": false
+        },
+        {
+          "text": "Банф славится своими ледниками",
+          "isTrue": true
+        },
+        {
+          "text": "Уменьшение ледников в Банфе приводит в уменьшению притока в реки и озера",
+          "isTrue": true
+        },
+        {
+          "text": "В Банфе было найдено большое количество останков древнейшего человека",
+          "isTrue": false
+        }
+      ]
     },
     {
-      "title": "Erich Maria Remarque",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis consequat imperdiet. Praesent sit amet accumsan est. Maecenas quis leo augue. Pellentesque efficitur lacus a volutpat condimentum. Pellentesque in augue interdum elit facilisis mattis. Aenean pulvinar aliquam maximus. Ut tempus nulla quam, eget pellentesque nisi congue vel. Morbi nulla dolor, consequat ac leo quis, ullamcorper interdum odio. Cras ut ultrices nulla, quis efficitur ipsum. Nulla bibendum velit non sem finibus bibendum.\n\nInteger quis iaculis nulla. Proin elit nulla, lobortis sit amet iaculis vitae, malesuada vel elit. Sed sed posuere velit. Pellentesque sollicitudin massa ut ligula pulvinar, et dapibus tellus laoreet. In et sodales risus, quis ultrices lorem. Sed fringilla lobortis augue, eget vulputate dui luctus vel. Sed justo eros, euismod non diam ut, pharetra euismod elit. Cras metus est, aliquet a sapien quis, ornare fringilla tellus. Mauris eu feugiat mi. Donec sodales viverra congue.\n\nPhasellus laoreet arcu mauris. Pellentesque augue sem, pretium vel ultricies non, commodo a felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla sodales orci et velit imperdiet, eu ornare nulla feugiat. Phasellus gravida pellentesque mi vitae convallis. Quisque dignissim nisi a turpis gravida ultrices. Proin eleifend et orci vitae viverra. Quisque ac lectus augue. Sed pulvinar tortor et elit scelerisque fermentum. Sed dapibus egestas ligula, in viverra ipsum tristique sed. Curabitur efficitur, quam non imperdiet fermentum, ligula arcu accumsan ante, sodales imperdiet tortor nibh et ante. Curabitur turpis velit, molestie nec dui nec, laoreet fringilla eros. Phasellus eu faucibus nunc. Duis vel ultrices sapien, non tristique velit. Suspendisse potenti. Aliquam facilisis mattis sagittis.",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed elit viverra, placerat ex suscipit, hendrerit ex. In eros massa, dignissim eget viverra vel, consequat quis eros. Ut mollis, orci accumsan porttitor faucibus, ligula ante pharetra dui, nec malesuada justo erat nec turpis. Duis eros augue, cursus sit amet consectetur eget, placerat vel magna. Quisque a lectus varius, pulvinar massa sed, luctus erat. Proin lobortis orci ac enim facilisis imperdiet. Cras euismod dui est.",
+      "title": "Эрих Мария Ремарк",
+      "text": "Эрих Ремарк родился в городе Оснабрюк 22 июня 1898 года. Первое образование в биографии Ремарка было получено в церковной школе. Затем он учился в католической семинарии. В 1916 пошел на войну, был ранен. В послевоенное время в биографии Эриха Ремарка было испробовано несколько профессий. Он был журналистом и корреспондентом, а кроме того испытал себя в роли библиотекаря, учителя, бухгалтера.\nПервые произведения Ремарка были написаны в 1916 году. Позже писатель взял псевдоним Эрих Мария Ремарк – в честь умершей матери. Свои впечатления от жестокости войны Ремарк изобразил в произведении «На западном фронте без перемен» в 1929.  Кроме того опубликовал еще несколько подобных произведений, но все они были сожжены нацистами в 1933. В том же году Ремарк переехал в Швейцарию.\nРоман «Триумфальная арка» Ремарк написал в 1945 году под впечатлением от отношений с Марлен Дитрих.  В 1939 году в биографии Эриха Мария Ремарка произошел переезд в США, где спустя восемь лет он получил гражданство. В 1958 году второй раз женился, теперь на актрисе Полетт Годар (первой женой Ремарка была танцовщица Ютта Замбона). Сразу после этого вместе с женой обосновался в Швейцарии, прожил там до конца жизни.\nСреди других известных произведений Эриха Мария Ремарка: «Три товарища», «Время жить и время умирать», «Чёрный обелиск», «Жизнь взаймы» и многие другие.",
+      "description": "Эрих Мария Ремарк (нем.  Erich Maria Remarque, урождённый Эрих Пауль Ремарк, Erich Paul Remark; 22 июня 1898, Оснабрюк — 25 сентября 1970, Локарно) — немецкий писатель XX века, представитель «потерянного поколения». Его роман «На Западном фронте без перемен» входит в большую тройку романов «потерянного поколения», изданных в 1929 году, наряду с произведениями «Прощай, оружие!» Эрнеста Хемингуэя и «Смерть героя» Ричарда Олдингтона.",
       "type": 1,
-      "speed": 125,
+      "speed": 400,
       "state": 0,
-      "pathToImage": "card_2.jpg"
+      "pathToImage": "card_2.jpg",
+      "checks": [
+        {
+          "text": "Эрих Мария Ремарк получил первое образование в церковной школе",
+          "isTrue": true
+        },
+        {
+          "text": "Писатель всю жизнь занимался писательством",
+          "isTrue": false
+        },
+        {
+          "text": "Ремарк так же был журналистом и корреспондентом",
+          "isTrue": true
+        },
+        {
+          "text": "Одна из самых известных книг Ремарка - 'Антлант поправил плечи'",
+          "isTrue": false
+        }
+      ]
     },
   {
-    "title": "Artificial Intelligence",
+    "title": "Искусственный интелект",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis consequat imperdiet. Praesent sit amet accumsan est. Maecenas quis leo augue. Pellentesque efficitur lacus a volutpat condimentum. Pellentesque in augue interdum elit facilisis mattis. Aenean pulvinar aliquam maximus. Ut tempus nulla quam, eget pellentesque nisi congue vel. Morbi nulla dolor, consequat ac leo quis, ullamcorper interdum odio. Cras ut ultrices nulla, quis efficitur ipsum. Nulla bibendum velit non sem finibus bibendum.\n\nInteger quis iaculis nulla. Proin elit nulla, lobortis sit amet iaculis vitae, malesuada vel elit. Sed sed posuere velit. Pellentesque sollicitudin massa ut ligula pulvinar, et dapibus tellus laoreet. In et sodales risus, quis ultrices lorem. Sed fringilla lobortis augue, eget vulputate dui luctus vel. Sed justo eros, euismod non diam ut, pharetra euismod elit. Cras metus est, aliquet a sapien quis, ornare fringilla tellus. Mauris eu feugiat mi. Donec sodales viverra congue.\n\nPhasellus laoreet arcu mauris. Pellentesque augue sem, pretium vel ultricies non, commodo a felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla sodales orci et velit imperdiet, eu ornare nulla feugiat. Phasellus gravida pellentesque mi vitae convallis. Quisque dignissim nisi a turpis gravida ultrices. Proin eleifend et orci vitae viverra. Quisque ac lectus augue. Sed pulvinar tortor et elit scelerisque fermentum. Sed dapibus egestas ligula, in viverra ipsum tristique sed. Curabitur efficitur, quam non imperdiet fermentum, ligula arcu accumsan ante, sodales imperdiet tortor nibh et ante. Curabitur turpis velit, molestie nec dui nec, laoreet fringilla eros. Phasellus eu faucibus nunc. Duis vel ultrices sapien, non tristique velit. Suspendisse potenti. Aliquam facilisis mattis sagittis.",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed elit viverra, placerat ex suscipit, hendrerit ex. In eros massa, dignissim eget viverra vel, consequat quis eros. Ut mollis, orci accumsan porttitor faucibus, ligula ante pharetra dui, nec malesuada justo erat nec turpis. Duis eros augue, cursus sit amet consectetur eget, placerat vel magna. Quisque a lectus varius, pulvinar massa sed, luctus erat. Proin lobortis orci ac enim facilisis imperdiet. Cras euismod dui est.",
+    "description": "Искусственный интелект -  свойство интеллектуальных систем выполнять творческие функции, которые традиционно считаются прерогативой человека; наука и технология создания интеллектуальных машин, особенно интеллектуальных компьютерных программ.\n\n\nРобот Kismet с искусственным интеллектом в Музее Массачусетского технологического института, 2006 год.\nИИ связан со сходной задачей использования компьютеров для понимания человеческого интеллекта, но не обязательно ограничивается биологически правдоподобными методами.\n\nСуществующие на сегодня интеллектуальные системы имеют очень узкие области применения. Например, программы, способные обыграть человека в шахматы, не могут отвечать на вопросы и т. д.",
     "type": 0,
     "speed": 150,
     "state": 2,
-    "pathToImage": "card_3.jpg"
+    "pathToImage": "card_3.jpg",
+    "checks": [
+      {
+        "text": "This is true",
+        "isTrue": true
+      },
+      {
+        "text": "This is false",
+        "isTrue": false
+      },
+      {
+        "text": "This is false",
+        "isTrue": false
+      },
+      {
+        "text": "This is true",
+        "isTrue": true
+      }
+    ]
   }
 ]

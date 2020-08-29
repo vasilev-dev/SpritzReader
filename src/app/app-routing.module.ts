@@ -4,6 +4,7 @@ import {SpritzComponent} from './components/spritz/spritz.component';
 import {MenuComponent} from './components/menu/menu.component';
 import {RhythmicComponent} from './components/rhythmic/rhythmic.component';
 import {LaunchComponent} from './components/launch/launch.component';
+import {CheckResultComponent} from './components/check-result/check-result.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,14 @@ const routes: Routes = [
   {
     path: 'launch',
     component: LaunchComponent
+  },
+  {
+    path: 'success',
+    component: CheckResultComponent
+  },
+  {
+    path: 'failure',
+    component: CheckResultComponent
   }
 ];
 

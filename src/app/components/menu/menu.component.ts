@@ -40,11 +40,11 @@ export class MenuComponent implements OnInit {
   getButtonStateText(state: CardState): string {
     switch (state) {
       case CardState.Available:
-        return 'Start';
+        return 'Читать';
       case CardState.Closed:
-        return 'Closed';
+        return 'Закрыто';
       case CardState.Completed:
-        return 'Repeat';
+        return 'Перечитать';
     }
   }
 
@@ -61,12 +61,6 @@ export class MenuComponent implements OnInit {
       this.cardService.setCard(card);
 
       await this.router.navigateByUrl('launch', {state: {type: card.type}});
-
-      // if (card.type === CardType.Spritz) {
-      //   await this.router.navigateByUrl('launch', {state: {type: card.type}});
-      // } else {
-      //   await this.router.navigateByUrl('launch');
-      // }
     }
   }
 }

@@ -27,7 +27,7 @@ export class RhythmicComponent implements OnInit {
       this.card = card;
     });
     this.chars = this.card.text.split('');
-    this.msPerChars = this.cardService.calculateMsPerChars(this.card.speed + 1000);
+    this.msPerChars = this.cardService.calculateMsPerChars(this.card.speed);
     await this.startReading();
   }
 
@@ -41,14 +41,15 @@ export class RhythmicComponent implements OnInit {
 
   spanStyle(index: number): any {
     return {
-      background: index === this.currentIndexChar && this.isLetterOrDigitRegExp.test(this.chars[index]) ? '#ffff99' : 'white',
+      background: index === this.currentIndexChar && this.isLetterOrDigitRegExp.test(this.chars[index]) ? '#ffff00' : 'white',
     };
   }
 
   openCheckDialog(): void {
-    const checkDialogRef = this.dialog.open(CheckDialogComponent, {
-      width: '500px',
-      data: this.card
+    this.dialog.open(CheckDialogComponent, {
+      disableClose: true,
+      width: '650px',
+      data: { checks: this.card.checks, type: this.card.type }
     });
   }
 }

@@ -8,7 +8,7 @@ import {CardType} from '../../shared/models/card.model';
   styleUrls: ['./launch.component.scss']
 })
 export class LaunchComponent implements OnInit {
-  cardType: CardType;
+  public cardType: CardType;
 
   constructor(private router: Router) {
     this.cardType = router.getCurrentNavigation().extras.state.type;

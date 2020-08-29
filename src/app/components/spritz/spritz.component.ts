@@ -32,7 +32,7 @@ export class SpritzComponent implements OnInit {
     });
 
     this.words = splitToWords(this.card.text);
-    this.msPerWord = this.cardService.calculateMsPerWord(this.card.speed + 1000);
+    this.msPerWord = this.cardService.calculateMsPerWord(this.card.speed);
     this.currentWordIndex = 0;
     await this.startReading();
   }
@@ -50,9 +50,10 @@ export class SpritzComponent implements OnInit {
   }
 
   openCheckDialog(): void {
-    const checkDialogRef = this.dialog.open(CheckDialogComponent, {
-      width: '500px',
-      data: this.card
+    this.dialog.open(CheckDialogComponent, {
+      disableClose: true,
+      width: '650px',
+      data: { checks: this.card.checks, type: this.card.type }
     });
   }
 }

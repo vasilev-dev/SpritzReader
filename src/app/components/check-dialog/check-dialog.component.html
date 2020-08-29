@@ -1,1 +1,11 @@
-<p>check-dialog works!</p>
+<h2 mat-dialog-title>Проверка прочитанного</h2>
+<mat-dialog-content>
+  <mat-selection-list #list [(ngModel)]="selected">
+    <mat-list-option *ngFor="let check of checks" color="primary" [value]="check">
+      {{check.text}}
+    </mat-list-option>
+  </mat-selection-list>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-raised-button color="primary" [mat-dialog-close]="true" (click)="check()">Проверить</button>
+</mat-dialog-actions>

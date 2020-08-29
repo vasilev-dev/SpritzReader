@@ -17,6 +17,9 @@ import { RhythmicComponent } from './components/rhythmic/rhythmic.component';
 import { CheckDialogComponent } from './components/check-dialog/check-dialog.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { LaunchComponent } from './components/launch/launch.component';
+import {MatListModule} from '@angular/material/list';
+import {FormsModule} from '@angular/forms';
+import {CheckResultComponent} from './components/check-result/check-result.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,8 @@ import { LaunchComponent } from './components/launch/launch.component';
     SpritzComponent,
     RhythmicComponent,
     CheckDialogComponent,
-    LaunchComponent
+    LaunchComponent,
+    CheckResultComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,9 @@ import { LaunchComponent } from './components/launch/launch.component';
     MatButtonModule,
     MatIconModule,
     MatChipsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatListModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

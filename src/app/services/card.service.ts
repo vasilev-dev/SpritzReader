@@ -7,7 +7,7 @@ import {BehaviorSubject} from 'rxjs';
 })
 export class CardService {
   private cardSource = new BehaviorSubject<CardModel>(null);
-  private avgCharsInWord = 6;
+  private avgCharsInWord = 7;
 
   readingCard$ = this.cardSource.asObservable();
 
