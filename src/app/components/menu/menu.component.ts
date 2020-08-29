@@ -1,17 +1,23 @@
 import {Component, OnInit} from '@angular/core';
 import {CardModel, CardState, CardType} from '../../shared/models/card.model';
-import {ApiService} from '../../core/api-service.service';
+import {ApiService} from '../../sdk/api-service.service';
+import {Router} from '@angular/router';
+import {CardService} from '../../core/card.service';
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './app-main.component.html',
-  styleUrls: ['./app-main.component.scss']
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.scss']
 })
-export class AppMainComponent implements OnInit {
+export class MenuComponent implements OnInit {
   public cards: CardModel[] = [];
   public currentCard: CardModel;
 
-  constructor(private apiService: ApiService) { }
+  constructor(
+    private apiService: ApiService,
+    private router: Router,
+    private cardService: CardService)
+  { }
 
   ngOnInit(): void {
     this.apiService.getCards().subscribe(data => {
@@ -48,5 +54,17 @@ export class AppMainComponent implements OnInit {
 
   getCardType(type: CardType): string {
     return CardType[type];
+  }
+
+  async onStartClicked(card: CardModel): Promise<void> {
+    if (card.state === CardState.Available || card.state === CardState.Completed) {
+      this.cardService.setCard(card);
+
+      if (card.type === CardType.Spritz) {
+        await this.router.navigateByUrl('/spritz');
+      } else {
+        console.log('TODO');
+      }
+    }
   }
 }

@@ -6,17 +6,19 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { AppMainComponent } from './components/app-main/app-main.component';
+import { MenuComponent } from './components/menu/menu.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatChipsModule} from '@angular/material/chips';
+import { SpritzComponent } from './components/spritz/spritz.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppMainComponent
+    MenuComponent,
+    SpritzComponent
   ],
   imports: [
     BrowserModule,

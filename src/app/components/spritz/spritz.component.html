@@ -1,0 +1,5 @@
+<div class="center">
+  <button *ngIf="!readingStarted" mat-button (click)="startReading()">Start reading</button>
+  <p *ngIf="readingStarted">{{leftChars}}<span>{{centerChar}}</span>{{rightChars}}
+  </p>
+</div>

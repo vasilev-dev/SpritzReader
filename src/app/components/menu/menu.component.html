@@ -19,7 +19,7 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" [disabled]="isClosedCard(card.state)">
+      <button mat-raised-button (click)="onStartClicked(card)" color="primary" [disabled]="isClosedCard(card.state)">
         {{getButtonStateText(card.state)}}
       </button>
     </mat-card-actions>
