@@ -1,0 +1,9 @@
+<div class="center">
+  <h1 *ngIf="success">Карточка успешно пройдена</h1>
+  <h1 *ngIf="!success">Вы допустили ошибку</h1>
+  <br/>
+  <br/>
+  <button *ngIf="!success" mat-flat-button (click)="repeat()">Повторить чтение</button>
+  <br/>
+  <button mat-flat-button (click)="backToMenu()">Назад в меню</button>
+</div>
