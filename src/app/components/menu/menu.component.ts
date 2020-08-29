@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {CardModel, CardState, CardType} from '../../shared/models/card.model';
 import {ApiService} from '../../sdk/api-service.service';
 import {Router} from '@angular/router';
-import {CardService} from '../../core/card.service';
+import {CardService} from '../../services/card.service';
 
 @Component({
   selector: 'app-menu',
@@ -60,11 +60,13 @@ export class MenuComponent implements OnInit {
     if (card.state === CardState.Available || card.state === CardState.Completed) {
       this.cardService.setCard(card);
 
-      if (card.type === CardType.Spritz) {
-        await this.router.navigateByUrl('/spritz');
-      } else {
-        console.log('TODO');
-      }
+      await this.router.navigateByUrl('launch', {state: {type: card.type}});
+
+      // if (card.type === CardType.Spritz) {
+      //   await this.router.navigateByUrl('launch', {state: {type: card.type}});
+      // } else {
+      //   await this.router.navigateByUrl('launch');
+      // }
     }
   }
 }

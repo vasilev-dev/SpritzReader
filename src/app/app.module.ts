@@ -13,12 +13,19 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatChipsModule} from '@angular/material/chips';
 import { SpritzComponent } from './components/spritz/spritz.component';
+import { RhythmicComponent } from './components/rhythmic/rhythmic.component';
+import { CheckDialogComponent } from './components/check-dialog/check-dialog.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { LaunchComponent } from './components/launch/launch.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    SpritzComponent
+    SpritzComponent,
+    RhythmicComponent,
+    CheckDialogComponent,
+    LaunchComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +37,8 @@ import { SpritzComponent } from './components/spritz/spritz.component';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
-    MatChipsModule
+    MatChipsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

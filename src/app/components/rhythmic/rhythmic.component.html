@@ -1,0 +1,4 @@
+<div class="text">
+  <h1>{{card.title}}</h1>
+  <p><span *ngFor="let char of chars; let i = index" [ngStyle]="spanStyle(i)">{{char}}</span></p>
+</div>

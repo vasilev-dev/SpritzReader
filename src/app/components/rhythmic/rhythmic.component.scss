@@ -19,10 +19,20 @@ button {
   width: 400px;
 }
 
-p {
-  font-size: 70px;
+.text {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
 
-span {
-  color: red;
+.text h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.text p {
+  font-size: 21px;
+  line-height: 30px;
 }

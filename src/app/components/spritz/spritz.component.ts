@@ -1,7 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {CardModel} from '../../shared/models/card.model';
-import {CardService} from '../../core/card.service';
 import splitToWords from 'split-to-words';
+import {CardService} from '../../services/card.service';
+import {CommonService} from '../../services/common.service';
+import {MatDialog} from '@angular/material/dialog';
+import {CheckDialogComponent} from '../check-dialog/check-dialog.component';
 
 @Component({
   selector: 'app-spritz',
@@ -13,43 +16,43 @@ export class SpritzComponent implements OnInit {
   words: string[];
   currentWordIndex: number;
   msPerWord: number;
-  readingStarted: boolean;
 
   leftChars: string;
   centerChar: string;
   rightChars: string;
 
-  constructor(private cardService: CardService) { }
+  constructor(
+    private cardService: CardService,
+    private commonService: CommonService,
+    private dialog: MatDialog) { }
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
     this.cardService.readingCard$.subscribe(card => {
       this.card = card;
     });
+
     this.words = splitToWords(this.card.text);
-    this.msPerWord = this.calculateMsPerWord(this.card.speed);
+    this.msPerWord = this.cardService.calculateMsPerWord(this.card.speed + 1000);
     this.currentWordIndex = 0;
-    this.readingStarted = false;
+    await this.startReading();
   }
 
-  calculateMsPerWord = (wordPerMinute: number): number => 60 / wordPerMinute * 1000;
-
   async startReading(): Promise<void> {
-    this.readingStarted = true;
-    console.log(this.card.text);
-
     for (const index of this.words.keys()) {
       const centerIndex = Math.floor(this.words[index].length / 2);
       this.leftChars = this.words[index].slice(0, centerIndex);
       this.centerChar = this.words[index].charAt(centerIndex);
       this.rightChars = this.words[index].slice(centerIndex + 1);
 
-      await this.sleep(this.msPerWord);
+      await this.commonService.sleep(this.msPerWord);
     }
-
-    this.readingStarted = false;
+    this.openCheckDialog();
   }
 
-  async sleep(ms): Promise<unknown> {
-    return new Promise(resolve => setTimeout(resolve, ms));
+  openCheckDialog(): void {
+    const checkDialogRef = this.dialog.open(CheckDialogComponent, {
+      width: '500px',
+      data: this.card
+    });
   }
 }
