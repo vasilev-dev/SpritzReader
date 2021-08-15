@@ -1,4 +1,8 @@
-# SpritzReader
+# 📚 SpritzReader
+### Angular client app for teaching reading by methods of rhythmic reading and spitz-methods. ###
+
+***▶ Link to video with demo:***
+[![Watch the video](https://img.youtube.com/vi/6fyPPWQbYkA/maxresdefault.jpg)](https://www.youtube.com/watch?v=6fyPPWQbYkA)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
